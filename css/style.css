@@ -1,17 +1,78 @@
+/* Global Styles */
 html {
 	font-size: 16px;
 }
 
 * {
 	box-sizing: border-box;
-}
-
-body {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	background: #fff;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #333;
+	line-height: 1.2rem;
+}
+
+/* Navbar */
 nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #383e4c;
+	width: 100%;
+	height: 75px;
+	z-index: 1;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	display: flex;
+	flex-wrap: nowrap;
+	list-style-type: none;
+	margin: 0 10px;
+}
+
+nav ul li a {
+	display: flex;
+	flex-wrap: nowrap;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 25px;
+	border: 1px solid #666c7a;
+	font-size: 1.2rem;
+}
+
+nav ul li a:hover,
+.active {
+	background-color: #495060;
+}
+
+/* Footer */
+footer {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	height: 150px;
+	line-height: 3rem;
+}
+
+footer h1 {
+	color: #AAA;
+	font-size: 2rem;
+	
 }
