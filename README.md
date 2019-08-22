@@ -5,10 +5,11 @@ This was created to complete the Pre-Work challenge for Chingu, the task is to r
 The template consists of a parallax scroll effect on the background images and a flexbox layout of columns one to four.
 
 ### Technologies Used
--HTML5
--CSS3
--Vanilla JavaScript
--FlexBox for responsiveness
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- FlexBox for responsiveness
 
 ### Live Demo:
 
