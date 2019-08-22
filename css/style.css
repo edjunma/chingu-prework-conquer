@@ -72,7 +72,8 @@ footer {
 }
 
 footer h1 {
-	color: #AAA;
+	color: #aaa;
 	font-size: 2rem;
-	
+	font-style: italic;
+	margin-top: 10px;
 }
