@@ -60,6 +60,28 @@ nav ul li a:hover,
 	background-color: #495060;
 }
 
+/* Contact Section */
+#contact-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background-image: url('');
+}
+
+#contact-section .container {
+}
+
+#contact-section h1 {
+	width: 100%;
+}
+
+form {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
 /* Footer */
 footer {
 	display: flex;
