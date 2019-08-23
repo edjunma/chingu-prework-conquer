@@ -82,6 +82,41 @@ form {
 	width: 100%;
 }
 
+.form-left,
+.form-right {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+}
+
+.form-left {
+	margin-right: 10px;
+}
+
+.form-right {
+	margin-left: 10px;
+}
+
+#contact-section textarea,
+p {
+	background: rgba(255, 255, 255, 0.6);
+	color: #333;
+}
+
+#contact-section button {
+	text-align: center;
+	background-color: #262628;
+	color: #fff;
+	width: 150px;
+	padding: 10px 20px;
+	margin-left: 10px;
+}
+
+#contact-section button:hover {
+	background-color: #e6e6e6;
+	color: #262628;
+}
+
 /* Footer */
 footer {
 	display: flex;
