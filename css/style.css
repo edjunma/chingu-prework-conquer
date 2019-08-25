@@ -17,6 +17,14 @@ body {
 	line-height: 1.2rem;
 }
 
+h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+	text-align: center;
+	text-shadow: 2px 2px 0 #333;
+}
+
 .container {
 	display: flex;
 	flex-flow: row wrap;
@@ -29,6 +37,28 @@ body {
 	background-position: center;
 	background-size: cover;
 }
+
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
+.third-width {
+	width: 31.5%;
+}
+
+.fourth-width {
+	width: 22.5%;
+}
+
+.box {
+	background-color: #f2f2f2;
+	margin: 20px 0;
+}
+
 .box-content {
 	flex-direction: column;
 	justify-content: space-between;
@@ -37,6 +67,22 @@ body {
 
 .box-content p {
 	padding: 10px 0;
+}
+
+button {
+	padding: 10px 40px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	margin: 10px 30px 15px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: all ease 0.2s;
+}
+
+button:hover {
+	background: #e6e6e6;
 }
 
 /* Navbar */
@@ -109,22 +155,90 @@ header .container {
 }
 
 /* About Us */
-#about {
+#about-section {
 	padding: 50px 0;
 }
 
-#about .container {
+#about-section .container {
 	max-width: 1200px;
 	padding: 0 20px;
 }
 
-#about img {
+#about-section .feature-content {
+	padding: 0 20px;
+}
+
+#about-section img {
 	max-width: 100%;
+}
+
+#about-section a {
+	display: flex;
+	padding-top: 10px;
+}
+
+#green,
+#blue,
+#red {
+	display: flex;
+	padding-top: 10px;
+}
+
+#green h2 {
+	color: green;
+}
+
+#green a {
+	background-color: green;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+#green a:hover {
+	color: #178927;
+}
+
+#blue h2 {
+	color: blue;
+}
+
+#blue a {
+	background-color: blue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+#blue a:hover {
+	background-color: #19a1e6;
+}
+
+#red h2 {
+	color: red;
+}
+
+#red a {
+	background-color: red;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+#red a:hover {
+	background-color: #aa2e09;
 }
 
 /* Services */
 #service-section {
 	max-width: 1200px;
+}
+
+#service-section .container {
+	padding: 50px 20px;
 }
 
 /* Contact Section */
