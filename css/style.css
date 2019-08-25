@@ -192,6 +192,7 @@ header .container {
 
 #green h2 {
 	color: green;
+	text-align: center;
 }
 
 #green p {
@@ -213,6 +214,7 @@ header .container {
 
 #blue h2 {
 	color: blue;
+	text-align: center;
 }
 
 #blue p {
@@ -234,6 +236,7 @@ header .container {
 
 #red h2 {
 	color: red;
+	text-align: center;
 }
 
 #red p {
