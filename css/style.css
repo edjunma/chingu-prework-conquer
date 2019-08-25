@@ -69,6 +69,12 @@ h1 {
 	padding: 10px 0;
 }
 
+.feature-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
 button {
 	padding: 10px 40px;
 	border: none;
@@ -161,7 +167,6 @@ header .container {
 
 #about-section .container {
 	max-width: 1200px;
-	padding: 0 20px;
 }
 
 #about-section .feature-content {
@@ -170,6 +175,7 @@ header .container {
 
 #about-section img {
 	max-width: 100%;
+	height: 250px;
 }
 
 #about-section a {
@@ -177,9 +183,9 @@ header .container {
 	padding-top: 10px;
 }
 
-#green,
-#blue,
-#red {
+#green div,
+#blue div,
+#red div {
 	display: flex;
 	padding-top: 10px;
 }
@@ -188,7 +194,12 @@ header .container {
 	color: green;
 }
 
-#green a {
+#green p {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#green button {
 	background-color: green;
 	color: #fff;
 	border: none;
@@ -196,15 +207,20 @@ header .container {
 	margin: 0 auto;
 }
 
-#green a:hover {
-	color: #178927;
+#green button:hover {
+	background-color: #178927;
 }
 
 #blue h2 {
 	color: blue;
 }
 
-#blue a {
+#blue p {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#blue button {
 	background-color: blue;
 	color: #fff;
 	border: none;
@@ -212,7 +228,7 @@ header .container {
 	margin: 0 auto;
 }
 
-#blue a:hover {
+#blue button:hover {
 	background-color: #19a1e6;
 }
 
@@ -220,7 +236,12 @@ header .container {
 	color: red;
 }
 
-#red a {
+#red p {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#red button {
 	background-color: red;
 	color: #fff;
 	border: none;
@@ -228,7 +249,7 @@ header .container {
 	margin: 0 auto;
 }
 
-#red a:hover {
+#red button:hover {
 	background-color: #aa2e09;
 }
 
