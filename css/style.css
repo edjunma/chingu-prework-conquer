@@ -240,13 +240,59 @@ ul li a:hover,
 
 /* End About Section Styles */
 
-/* Services */
+/* Start Blog Section Styles */
+#blog-section .container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.blog-content {
+	display: inline-block;
+	background: #f2f2f2;
+	margin: 0 15px;
+	padding-bottom: 40px;
+	max-width: 555px;
+}
+
+.blog-content h2 {
+	color: #888;
+	padding-top: 15px;
+}
+
+.blog-content p {
+	color: #333;
+	padding: 25px;
+	font-size: 14px;
+}
+
+.blog-content span {
+	float: right;
+	margin-right: 5rem;
+}
+
+.blog-content span a {
+	background: #fff;
+	color: #777;
+	font-size: 1.1rem;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px 30px;
+}
+
+.blog-content span a:hover {
+	background: #e6e6e6;
+}
+
+/* Start Services Section Styles */
 #services-section {
 	max-width: 1200px;
 }
 
 #services-section .container {
-	padding: 50px 20px;
+	epadding: 50px 20px;
 }
 
 #services-section img {
