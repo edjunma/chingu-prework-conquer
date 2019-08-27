@@ -121,7 +121,10 @@ ul li a:hover,
 
 /* Start Homepage Styles*/
 #homepage {
-	background-image: url('/img/mountain.jpg') fixed no-repeat cover;
+	background-image: url('/img/mtfuji.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 600px;
 	text-align: center;
 	padding: 235px 0;
@@ -146,7 +149,7 @@ ul li a:hover,
 
 /* Start About Section Styles */
 #about-section {
-	padding: 70px 0;
+	padding-top: 70px;
 }
 
 #about-section .container {
@@ -169,14 +172,15 @@ ul li a:hover,
 }
 
 .about-title {
-	padding: 0 20px;
+	padding: 15px 10px 0;
 	text-align: left;
 }
 
 .about-description {
+	font-size: 14px;
 	color: #333;
 	text-align: left;
-	padding: 0 20px 35px;
+	padding: 5px 10px 30px;
 	margin-top: 15px;
 }
 
@@ -309,12 +313,6 @@ form {
 
 .form-right {
 	margin-left: 10px;
-}
-
-#contact-section textarea,
-p {
-	background: rgba(255, 255, 255, 0.6);
-	color: #333;
 }
 
 #contact-section button {
