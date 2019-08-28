@@ -19,7 +19,7 @@ h1 {
 	font-size: 2.5rem;
 	line-height: 3.5rem;
 	text-align: center;
-	text-shadow: 2px 2px 0 #333;
+	text-shadow: 1px 1px 0 #333;
 }
 
 .container {
@@ -172,7 +172,7 @@ ul li a:hover,
 }
 
 .about-title {
-	padding: 15px 10px 0;
+	padding: 15px 15px 0 15px;
 	text-align: left;
 }
 
@@ -180,7 +180,7 @@ ul li a:hover,
 	font-size: 14px;
 	color: #333;
 	text-align: left;
-	padding: 5px 10px 30px;
+	padding: 10px 15px 30px 15px;
 	margin-top: 15px;
 }
 
@@ -257,7 +257,7 @@ ul li a:hover,
 }
 
 .blog-content h2 {
-	color: #888;
+	color: #777;
 	padding-top: 15px;
 }
 
@@ -317,58 +317,206 @@ ul li a:hover,
 
 /* End Services Section Styles */
 
-/* Contact Section */
-#contact-section {
+/* Start Testimonial Section Styles */
+#testimonial-section {
+	margin: 60px 0;
+}
+
+#testimonial-section .container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#testimonial-section h2 {
+	color: #777;
+}
+
+.testimonial-content {
+	text-align: center;
+	max-width: 260px;
+	margin: 0 15px 30px 15px;
 	height: 500px;
-	background-image: url('');
+	background-color: #f2f2f2;
+}
+
+.testimonial-content p {
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.content-link {
+	display: inline-block;
+	background: #fff;
+	color: #888;
+	text-decoration: none;
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	padding: 10px 30px;
+	font-size: 1.2rem;
+	margin-top: 15px;
+	transition: all 0.3s ease;
+}
+
+.content-link:hover,
+.content-link:focus {
+	background: #e6e6e6;
+	color: #145da0;
+}
+
+.tm-box {
+	width: 100%;
+	background: #f2f2f2;
+	margin: 0 15px;
+}
+
+.tm-box-description {
+	padding: 30px;
+	text-align: left;
+}
+
+.tm-box-description h2 {
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.tm-box-p {
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+/* End Testimonial Section Styles */
+
+/* Start Contact Section Styles */
+#contact-section {
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 #contact-section .container {
+	display: flex;
+	flex-direction: column;
+	max-width: 750px;
+	height: 100%;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+#contact-section::before {
+	content: '';
+	background-image: url(/img/mtfuji.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
 }
 
 #contact-section h1 {
-	width: 100%;
+	font-size: 2.2rem;
+	color: #fff;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px #333;
 }
 
-form {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
+#contact-section p {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	color: #000;
+	margin-bottom: 20px;
+	padding: 20px 15px;
+	text-align: center;
 }
 
-.form-left,
-.form-right {
+.contact-form {
 	display: flex;
-	flex-direction: column;
-	width: 350px;
+	justify-content: center;
 }
 
 .form-left {
-	margin-right: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	width: 50%;
+	height: auto;
+	padding-right: 15px;
 }
 
 .form-right {
-	margin-left: 10px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	width: 50%;
+	display: flex;
+	height: auto;
+	flex-flow: column wrap;
 }
 
-#contact-section button {
-	text-align: center;
-	background-color: #262628;
+.form-control {
+	width: 100%;
+	padding: 9px 12px;
+	line-height: 1.4rem;
+	border-radius: 5px;
+	border: none;
+	background: rgba(242, 242, 242, 0.4);
+	transition: ease-in-out 0.15s;
+	outline: none;
+}
+
+.form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input {
+	margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #000;
+}
+
+textarea {
+	height: auto;
+	resize: none;
+	overflow: auto;
+}
+
+.form-right button {
+	width: 30%;
+	background: #262628;
 	color: #fff;
-	width: 150px;
-	padding: 10px 20px;
-	margin-left: 10px;
+	border-color: #ccc;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 10px;
+
+	transition: all 0.3s ease;
+	overflow: visible;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
 }
 
-#contact-section button:hover {
-	background-color: #e6e6e6;
+.form-right button:hover {
+	cursor: pointer;
 	color: #262628;
+	background: #ccc;
 }
 
-/* Start Footer Styles */
+/* End Contact Section Styles */
+
+/* Start Footer Section Styles */
 #footer-section {
 	text-align: center;
 }
@@ -398,4 +546,17 @@ hr {
 	font-size: 12px;
 	margin-bottom: 25px;
 }
-/* End Footer Styles */
+/* End Footer Section Styles */
+
+/* Start scrollUp Styles */
+#scrollUp {
+	background-image: url(/img/scrollup.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 38px;
+	height: 48px;
+}
+
+/* End scrollUp Styles */

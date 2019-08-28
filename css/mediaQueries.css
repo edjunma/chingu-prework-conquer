@@ -1,0 +1,202 @@
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+	.container {
+		width: 100%;
+		max-width: 970px;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#about-section,
+	#contact-section {
+		padding-top: 40px;
+		margin-top: -40px;
+		background-clip: content-box;
+	}
+
+	#blog-section {
+		padding-top: 60px;
+	}
+
+	.container {
+		width: 750px;
+		max-width: 100%;
+	}
+
+	.nav-links li {
+		padding: 6px;
+	}
+
+	.nav-links a {
+		font-size: 1rem;
+	}
+
+	#testimonial-section .container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.testimonial-content {
+		text-align: center;
+		max-width: 260px;
+		flex: 1 5 50%;
+		margin: 0 auto 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#about-section,
+	#contact-section {
+		padding-top: 0px;
+		margin-top: 0px;
+		background-clip: content-box;
+	}
+
+	#blog-section {
+		padding-top: 0px;
+	}
+
+	.navbar {
+		background-color: transparent;
+	}
+
+	.nav-links {
+		position: fixed;
+		width: 100%;
+		max-height: 0;
+		margin-top: 45px;
+		flex-direction: column;
+		clip-path: inset(0% 0% 100% 0%);
+		-webkit-clip-path: inset(0% 0% 100% 0%);
+		transition: all 0.3s ease-out;
+		z-index: 10;
+	}
+
+	/* Burger */
+	.nav-active {
+		clip-path: inset(0% 0% 0% 0%);
+		-webkit-clip-path: inset(0% 0% 0% 0%);
+		max-height: 255px;
+	}
+
+	.nav-links li {
+		padding: 0 15px 0 15px;
+	}
+
+	.nav-links a {
+		padding: 10px 0;
+		border-radius: 2px;
+		border: none;
+		border-bottom: 2px solid #646d7c;
+		line-height: 18px;
+	}
+
+	.burger {
+		display: block;
+		z-index: 10;
+	}
+
+	#homepage {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#homepage h1,
+	#homepage h4 {
+		line-height: 1.1;
+	}
+
+	.about-content {
+		max-width: 360px;
+		margin: 0 auto 30px;
+	}
+
+	#blog-section .container {
+		flex-direction: column;
+		margin: 60px auto 60px;
+	}
+
+	.blog-content {
+		margin: 0 auto 30px;
+	}
+
+	#contact-section .container {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+
+	#contact-section p {
+		display: block;
+	}
+
+	.contact-form {
+		flex-flow: column nowrap;
+	}
+
+	.form-left {
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	.form-right {
+		padding-left: 0px;
+		width: 100%;
+	}
+
+	.form-right .btn {
+		max-width: 120px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	#navbar .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#testimonial-section .container {
+		flex-direction: column;
+	}
+
+	.testimonial-content {
+		padding-bottom: 20px;
+	}
+
+	.tm-box {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.nav-links li {
+		padding: 0 20px;
+	}
+
+	#homepage {
+		height: 70vh;
+	}
+
+	#homepage h1 {
+		font-size: 54px;
+	}
+
+	#homepage h4 {
+		font-size: 22px;
+	}
+
+	#services-section {
+		padding: 10px 0 30px;
+		background-attachment: initial;
+	}
+
+	#contact-section {
+		padding: 10px 0;
+	}
+}
