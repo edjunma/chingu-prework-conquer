@@ -38,7 +38,8 @@ const navBar = () => {
 		let destination = document.querySelector(targetId).offsetTop;
 		window.scrollTo({
 			top: destination,
-			behavior: 'smooth'
+			behavior: 'smooth',
+			speed: 100
 		});
 	}
 

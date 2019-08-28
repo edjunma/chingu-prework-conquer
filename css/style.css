@@ -329,7 +329,8 @@ ul li a:hover,
 }
 
 #testimonial-section h2 {
-	color: #777;
+	color: #333;
+	padding-top: 10px;
 }
 
 .testimonial-content {
@@ -343,6 +344,7 @@ ul li a:hover,
 .testimonial-content p {
 	padding: 10px 20px;
 	text-align: left;
+	color: #555;
 }
 
 .content-link {
@@ -364,10 +366,15 @@ ul li a:hover,
 	color: #145da0;
 }
 
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
 .tm-box {
 	width: 100%;
-	background: #f2f2f2;
 	margin: 0 15px;
+	background: #f2f2f2;
 }
 
 .tm-box-description {
