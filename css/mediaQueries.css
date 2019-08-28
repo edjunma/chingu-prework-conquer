@@ -11,7 +11,6 @@
 	#about-section,
 	#contact-section {
 		padding-top: 40px;
-		margin-top: -40px;
 		background-clip: content-box;
 	}
 
@@ -48,9 +47,16 @@
 @media only screen and (max-width: 768px) {
 	#about-section,
 	#contact-section {
-		padding-top: 0px;
-		margin-top: 0px;
+		padding-top: 40px;
 		background-clip: content-box;
+	}
+
+	.about-button {
+		font-size: 14px;
+	}
+
+	#about-section .container {
+		flex-direction: column;
 	}
 
 	#blog-section {
