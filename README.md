@@ -15,6 +15,8 @@ The template consists of a smooth scroll effect and a parallax scroll effect on 
 
 ### Live Demo:
 
+[here](https://edjunma.github.io/chingu-prework-conquer/)
+
 ### Run your own project:
 
 1. Clone this repo locally.
